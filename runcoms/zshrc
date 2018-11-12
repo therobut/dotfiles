@@ -1,0 +1,31 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+export POWERLEVEL9K_MODE='nerdfont-complete'
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Customize to your needs...
+export POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+#export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(background_jobs context dir_writable dir vcs newline status)
+#export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+export POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+export POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="╭"
+export POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="╰ "
+
+export POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='000'
+export POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='003'
+#export POWERLEVEL9K_STATUS_OK_BACKGROUND="234"
+
+export PATH=$PATH:$HOME/.go/bin
+
+export GOPATH=$HOME/go
+
+export PATH=$PATH:$HOME/go/bin
