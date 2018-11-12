@@ -59,7 +59,7 @@ done
 # Install Prezto
 echo "Installing Prezto..."
 if [[ -d "${ZDOTDIR:-$HOME}/.zprezto" ]]; then
-    echo "Prezto already installed. Checking for updates..."
+    echo "Prezto already installed."
 else
     git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 fi
@@ -76,5 +76,6 @@ echo "Setting ZSH as default shell..."
 chsh -s $(which zsh)
 
 # Success!
+echo "DONE!"
 exit 0
 
