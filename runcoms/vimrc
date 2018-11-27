@@ -85,7 +85,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'crusoexia/vim-monokai'
 Plugin 'trusktr/seti.vim'
 "Plugin 'PotatoesMaster/i3-vim-syntax'
-Plugin 'fatih/vim-go'
+"Plugin 'fatih/vim-go'
 Plugin 'digitaltoad/vim-pug'
 "Plugin 'therobut/vim-amber'
 
