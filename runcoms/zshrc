@@ -26,6 +26,8 @@ export POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='003'
 
 alias c="clear"
 
+export PATH=$PATH:$HOME/bin
+
 export PATH=$PATH:$HOME/.go/bin
 
 export GOPATH=$HOME/go
