@@ -38,5 +38,5 @@ export GOPATH=$HOME/go
 
 export PATH=$PATH:$HOME/go/bin
 
-export DOCKER_HOST="tcp://localhost:2375"
+#export DOCKER_HOST="tcp://localhost:2375"
 
