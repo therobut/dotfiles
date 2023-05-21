@@ -16,7 +16,7 @@ setopt EXTENDED_GLOB
 datetime=$(date +%Y%M%d%H%M%S)
 
 # define some functions
-setup_debian () {
+setup_ubuntu () {
     sudo apt update
     sudo apt install -y git
 }
@@ -35,10 +35,10 @@ if [ -f /etc/os-release ]; then
 fi
 
 # Automatically install git and dependencies, if possible
-case $ID_LIKE in
-    ('debian')
+case $ID in
+    ('ubuntu')
         echo "Installing dependencies..."
-        setup_debian
+        setup_ubuntu
         ;;
     (*)
         echo 'Unable to automate setup.'
